@@ -1,0 +1,40 @@
+{
+  "pengaturan": {
+    "CEPAT": true,
+    "JUMLAH_CITRA_LATIH": 200,
+    "JUMLAH_EPOCH": 3,
+    "JUMLAH_ULANGAN": 1,
+    "device": "cpu",
+    "skenario": {
+      "Tanpa augmentasi": "None",
+      "Flip": "Compose(\n      RandomHorizontalFlip(p=0.5)\n      RandomVerticalFlip(p=0.5)\n)",
+      "Kecerahan & kontras": "ColorJitter(brightness=(0.7, 1.3), contrast=(0.7, 1.3))"
+    }
+  },
+  "hasil": {
+    "Tanpa augmentasi": {
+      "dice": [
+        0.40212908387184143
+      ],
+      "iou": [
+        0.28273698687553406
+      ]
+    },
+    "Flip": {
+      "dice": [
+        0.3886696696281433
+      ],
+      "iou": [
+        0.27109408378601074
+      ]
+    },
+    "Kecerahan & kontras": {
+      "dice": [
+        0.329263836145401
+      ],
+      "iou": [
+        0.2185802310705185
+      ]
+    }
+  }
+}
