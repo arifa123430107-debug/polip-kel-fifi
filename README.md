@@ -14,13 +14,11 @@
 **Tugas P10 — Kecerdasan Buatan (BM25-41204), Teknik Biomedis ITERA**
 
 ## Anggota kelompok
-
-| Nama | NIM | Username GitHub | 
-|---|---|---|---|
-| Elisa Karunialita | 123430073 | elisa123430073-bit| 
-| Arifa Lutfiah| 123430107 | arifa123430107-debug | 
-| Muhammad Rafi Adh Dhuha| 123430023 | rafi123430023-debug | 
-
+| Nama | NIM | Username GitHub |
+|---|---|---|
+| Elisa Karunialita Sitorus | 123430073 | elisa123430073-bit |
+| Arifa Lutfiah | 123430107 | arifa123430107-debug |
+| Muhammad Rafi Adh Dhuha | 123430023 | rafi123430023-debug |
 ## 1. Pertanyaan
 
 Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan augmentasi apa yang tidak? Kenapa?
