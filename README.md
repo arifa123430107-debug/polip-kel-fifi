@@ -64,21 +64,24 @@ Contoh augmentasi yang dicoba:
 
 ## 5. Analisis peta kesalahan
 
-![Peta kesalahan](hasil/peta_kesalahan.png)
+### Analisis peta kesalahan
 
-<!-- Hijau = benar, merah = false positive, biru = false negative.
-     Pertanyaan pemandu: Polip seperti apa yang sering terlewat (kecil? datar? warna mirip dinding usus?)
-     Apa yang sering dikira polip padahal bukan? Apakah augmentasi memperbaiki kasus sulit? -->
+Peta kesalahan digunakan untuk mengevaluasi kesesuaian hasil segmentasi U-Net terhadap mask referensi dari dataset Kvasir-SEG. Visualisasi ini membantu mengidentifikasi wilayah yang berhasil dideteksi maupun wilayah yang mengalami kesalahan prediksi.
 
-✍️
+Pada peta kesalahan, warna hijau menunjukkan **True Positive (TP)**, yaitu piksel polip yang berhasil diprediksi dengan benar. Warna merah menunjukkan **False Positive (FP)**, yaitu area bukan polip yang keliru diprediksi sebagai polip. Sementara itu, warna biru menunjukkan **False Negative (FN)**, yaitu bagian polip yang tidak berhasil terdeteksi oleh model.
 
+Kesalahan segmentasi dapat terjadi akibat kemiripan warna dan tekstur antara polip dengan jaringan mukosa di sekitarnya, variasi pencahayaan, serta batas polip yang kurang jelas. Polip berukuran kecil atau memiliki kontras rendah juga berpotensi sulit dideteksi.
+
+Augmentasi Flip bertujuan membantu model mengenali variasi orientasi polip, sedangkan augmentasi Kecerahan dan Kontras bertujuan meningkatkan kemampuan model menghadapi perubahan kondisi pencahayaan. Pengaruh kedua augmentasi terhadap kesalahan segmentasi perlu dinilai berdasarkan perbandingan hasil prediksi dan metrik evaluasi.
+
+Secara keseluruhan, peta kesalahan melengkapi evaluasi Dice Score dan Intersection over Union (IoU), karena menunjukkan lokasi kesalahan prediksi yang tidak dapat diketahui hanya dari nilai numerik.
 ## 6. Pembahasan & kesimpulan
 
-<!-- Bandingkan hasil dengan hipotesis di Bagian 3. Hipotesis yang ternyata salah tetap bernilai,
-     asalkan dijelaskan kenapa. Perbedaan kecil (lebih kecil dari simpangan baku) belum tentu berarti. -->
+Berdasarkan hasil eksperimen segmentasi polip menggunakan U-Net, augmentasi Flip dan Kecerahan & Kontras menunjukkan perbedaan performa segmentasi. Pada hasil pengujian yang tersedia, augmentasi Flip menghasilkan Dice rata-rata sekitar 0,646, sedangkan augmentasi Kecerahan & Kontras menghasilkan Dice rata-rata sekitar 0,587.
 
-✍️
+Augmentasi Flip memungkinkan model mempelajari variasi orientasi polip, sedangkan perubahan kecerahan dan kontras membantu mensimulasikan kondisi pencahayaan yang berbeda pada citra kolonoskopi. Namun, perubahan intensitas yang terlalu besar dapat mengurangi kejelasan struktur polip.
 
+Kesimpulan akhir mengenai manfaat augmentasi dibandingkan tanpa augmentasi perlu didasarkan pada nilai baseline dari eksperimen akhir dengan konfigurasi pelatihan yang sama.
 ## 7. Pembagian kerja
 
 <!-- Siapa mengerjakan apa. Penilaian proses kerja dilihat dari riwayat commit tiap anggota. -->
@@ -87,12 +90,18 @@ Contoh augmentasi yang dicoba:
 
 ## 8. Penggunaan AI
 
-<!-- Wajib diisi, walau tidak memakai AI (tulis "Tidak memakai AI").
-     Contoh: "Claude Code (CLI) untuk menulis skenario augmentasi dan memperbaiki error di Bagian 4.
-     Draf Bagian 6 ditulis sendiri, lalu dirapikan bahasanya dengan bantuan AI." -->
 
-✍️
+Dalam pengerjaan tugas segmentasi polip pada citra kolonoskopi menggunakan U-Net, kelompok kami memanfaatkan kecerdasan buatan (AI), khususnya ChatGPT, sebagai alat bantu pembelajaran dan pendukung teknis.
 
+AI digunakan untuk membantu memahami konsep segmentasi citra medis, arsitektur U-Net, penggunaan augmentasi data, serta interpretasi metrik evaluasi Dice Score dan Intersection over Union (IoU).
+
+Selain itu, AI membantu mengidentifikasi dan memberikan solusi terhadap kendala teknis, seperti pengaturan lingkungan Python, instalasi dependensi menggunakan uv, penggunaan JupyterLab dan Google Colab, serta penyelesaian error saat menjalankan notebook.
+
+AI juga dimanfaatkan untuk memberikan panduan penggunaan Git dan GitHub, termasuk konfigurasi repository, pembuatan commit, proses push, dan penyusunan dokumentasi dalam README.md.
+
+Seluruh proses menjalankan eksperimen, memeriksa hasil evaluasi, dan mengunggah hasil pekerjaan dilakukan oleh anggota kelompok. Hasil eksperimen yang dilaporkan bersumber dari keluaran program yang dijalankan, bukan angka yang dibuat oleh AI.
+
+Dengan demikian, AI digunakan sebagai alat bantu dalam proses pembelajaran, pemecahan masalah, dan penyusunan laporan, bukan sebagai pengganti pelaksanaan eksperimen maupun tanggung jawab akademik anggota kelompok.
 ## Cara menjalankan ulang
 
 ```bash
