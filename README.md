@@ -106,7 +106,7 @@ Selain itu, AI membantu mengidentifikasi dan memberikan solusi terhadap kendala 
 AI juga dimanfaatkan untuk memberikan panduan penggunaan Git dan GitHub, termasuk konfigurasi repository, pembuatan commit, proses push, dan penyusunan dokumentasi dalam README.md.
 
 Seluruh proses menjalankan eksperimen, memeriksa hasil evaluasi, dan mengunggah hasil pekerjaan dilakukan oleh anggota kelompok. Hasil eksperimen yang dilaporkan bersumber dari keluaran program yang dijalankan, bukan angka yang dibuat oleh AI.
-
+ 
 Dengan demikian, AI digunakan sebagai alat bantu dalam proses pembelajaran, pemecahan masalah, dan penyusunan laporan, bukan sebagai pengganti pelaksanaan eksperimen maupun tanggung jawab akademik anggota kelompok.
 ## Cara menjalankan ulang
 
