@@ -18,7 +18,7 @@
 |---|---|---|
 | Elisa Karunialita Sitorus | 123430073 | elisa123430073-bit |
 | Arifa Lutfiah | 123430107 | arifa123430107-debug |
-| Muhammad Rafi Adh Dhuha | 123430023 | rafi123430023-debug |
+| Muhammad Rafi Adh Dhuha | 123430023 | rafi123430023-crypto |
 ## 1. Pertanyaan
 
 Augmentasi apa yang membantu U-Net menemukan polip pada citra kolonoskopi, dan augmentasi apa yang tidak? Kenapa?
@@ -85,8 +85,14 @@ Kesimpulan akhir mengenai manfaat augmentasi dibandingkan tanpa augmentasi perlu
 ## 7. Pembagian kerja
 
 <!-- Siapa mengerjakan apa. Penilaian proses kerja dilihat dari riwayat commit tiap anggota. -->
+| Nama Kegiatan | Anggota yang Mengerjakan |
+|---|---|
+| Membuat Repositori | Arifa Lutfiah |
+| Mengundang Kolaborator | Arifa Lutfiah |
+| Menyiapkan Dataset | Elisa Karunialita |
+| Melakukan Run Awal | Elisa Karunialita |
+| Membuat READNE.md | Semua Anggota Kelompok |
 
-✍️
 
 ## 8. Penggunaan AI
 
