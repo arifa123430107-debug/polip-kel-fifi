@@ -55,9 +55,9 @@ Contoh augmentasi yang dicoba:
 ## 4. Hasil
 | Skenario | Dice (rata-rata ± sb) | IoU (rata-rata ± sb) | Dice tiap ulangan |
 |---|---|---|---|
-| Tanpa augmentasi | 0.402 ± 0.000 | 0.283 ± 0.000 | 0.402 |
-| Flip | 0.389 ± 0.000 | 0.271 ± 0.000 | 0.389 |
-| Kecerahan & kontras | 0.329 ± 0.000 | 0.219 ± 0.000 | 0.329 |
+| Tanpa augmentasi | 0.580 ± 0.036 | 0.466 ± 0.031 | 0.529, 0.608, 0.602 |
+| Flip | 0.626 ± 0.011 | 0.521 ± 0.003 | 0.626, 0.613, 0.639 |
+| Kecerahan & kontras | 0.557 ± 0.059 | 0.442 ± 0.050 | 0.598, 0.474, 0.600 |
 
 
 ![Perbandingan Dice](hasil/perbandingan.png)
@@ -77,7 +77,7 @@ Augmentasi Flip bertujuan membantu model mengenali variasi orientasi polip, seda
 Secara keseluruhan, peta kesalahan melengkapi evaluasi Dice Score dan Intersection over Union (IoU), karena menunjukkan lokasi kesalahan prediksi yang tidak dapat diketahui hanya dari nilai numerik.
 ## 6. Pembahasan & kesimpulan
 
-Berdasarkan hasil eksperimen segmentasi polip menggunakan U-Net, augmentasi Flip dan Kecerahan & Kontras menunjukkan perbedaan performa segmentasi. Pada hasil pengujian yang tersedia, augmentasi Flip menghasilkan Dice rata-rata sekitar 0,646, sedangkan augmentasi Kecerahan & Kontras menghasilkan Dice rata-rata sekitar 0,587.
+Berdasarkan hasil eksperimen segmentasi polip menggunakan U-Net, augmentasi Flip dan Kecerahan & Kontras menunjukkan perbedaan performa segmentasi. Pada hasil pengujian yang tersedia, augmentasi Flip menghasilkan Dice rata-rata sekitar 0,626, sedangkan augmentasi Kecerahan & Kontras menghasilkan Dice rata-rata sekitar 0,557.
 
 Augmentasi Flip memungkinkan model mempelajari variasi orientasi polip, sedangkan perubahan kecerahan dan kontras membantu mensimulasikan kondisi pencahayaan yang berbeda pada citra kolonoskopi. Namun, perubahan intensitas yang terlalu besar dapat mengurangi kejelasan struktur polip.
 
