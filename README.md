@@ -91,7 +91,9 @@ Kesimpulan akhir mengenai manfaat augmentasi dibandingkan tanpa augmentasi perlu
 | Mengundang Kolaborator | Arifa Lutfiah |
 | Menyiapkan Dataset | Elisa Karunialita |
 | Melakukan Run Awal | Elisa Karunialita |
-| Membuat READNE.md | Semua Anggota Kelompok |
+| Melakukan Run Akhir | Arifa Lutfiah |
+| Membuat README.md | Semua Anggota Kelompok |
+| Mengisi README.md | Muhammad Rafi Adh Dhuha |
 
 
 ## 8. Penggunaan AI
@@ -121,4 +123,4 @@ Atau buka notebook di Google Colab (Runtime → Change runtime type → T4 GPU).
 
 - Jha, D., dkk. (2020). Kvasir-SEG: A Segmented Polyp Dataset. *MultiMedia Modeling (MMM 2020)*, 451–462.
 - Ronneberger, O., Fischer, P., & Brox, T. (2015). U-Net: Convolutional Networks for Biomedical Image Segmentation. *MICCAI*. arXiv:1505.04597.
-- ✍️ tambahkan referensi lain yang kalian pakai
+
